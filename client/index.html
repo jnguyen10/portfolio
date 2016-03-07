@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html ng-app='portfolio_app'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Jimmy Nguyen - Portfolio</title>
+<!-- 		<link rel="icon" type="image/ico" ui-sref="img/jbmi.ico" /> -->
+
+		<meta name='description' content='My personal portfolio page showcasing my work as a full stack web/mobile developer.'>
+		<!-- Need base tag in conjuction with HTML5 mode to remove hashbang -->
+		<!-- <base href='/'> -->
+		<!-- ##### GOOGLE FONT API ##### -->
+		<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Custom CSS File -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+		<!-- jQuery for certain directives -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<!-- FOR PARTIALS, INCLUDE SOURCE FOR THE ANGULAR-ROUTE  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+
+		<!-- Angular UI Router -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+		<!-- Custom Bootstrap for Angular -->
+		<script src="javascripts/ui-bootstrap-tpls-0.14.3.min.js"></script>
+		<!-- Angular MOMENT for Custom Time Mods -->
+		<!-- load momentJS (required for angular-moment) -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+		<!-- load angular-moment -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/angular-moment/0.9.0/angular-moment.min.js"></script>
+		<!-- load nginfinitescroll -->
+		<script type='text/javascript' src='javascripts/ng-infinite-scroll.min.js'></script>
+		<script src="javascripts/modernizr.js"></script> <!-- Modernizr -->
+
+		<!-- CREATE NEW ANGULAR MODULE AND ROUTE ANY PARTIALS -->
+		<script src='javascripts/app.js'></script>
+		<!-- ####### FACTORIES ######### -->
+		<script src='javascripts/UserFactory.js'></script>
+
+		<!-- ####### CONTROLLERS ######### -->
+		<script src='javascripts/MainController.js'></script>
+
+
+
+		<!-- ###### CUSTOM ANGULAR ####### -->
+		<script>
+		
+		</script>
+	</head>
+	<body data-hijacking="on" data-animation="parallax">
+		<section class="cd-section visible">
+			<div class='bkg_page'>
+				<div class='main_content'>
+					<h2>Jimmy Nguyen<br><span style="font-size: 4.5rem">Full Stack Web Developer<span></h2>
+				</div>
+				<!-- <h1>Jimmy Nguyen</h1> -->
+				
+				<!-- <div id='header'>
+					<nav class="navbar">
+						<div class='container-fluid'> -->
+							<!-- <img id='header_logo' src="img/jbmi.jpg" alt='jbmi_logo'> -->
+							<!-- <h1 id='name-banner'>Jimmy Nguyen</h1> -->
+							<!-- <a ng-click="goToJBMI()">JBMI</a> -->
+						<!-- </div>
+					</nav>
+				</div> -->
+			</div>
+		</section>
+
+		<section class="cd-section">
+			<div class='bkg_page' ng-controller="MainController">
+				<!-- <h2>JB Modern Inserts</h2> -->
+				<div class='main_content about_me'>
+					<h3>About Me</h3>
+				</div>
+				<!-- <div id='body-content'>
+					<div id="code-background" class="custom-background">
+						<h1>HELLO!</h1>
+					</div>
+					<div class="custom-background">
+
+					</div>
+					<div id="jbmi-background" class="custom-background">
+						
+					</div>
+					<div id='main-content' role="main">
+						<div ui-view></div>
+					</div>
+				</div> -->
+			</div>
+		</section>
+
+		<section class="cd-section">
+			<div class='bkg_page'>
+				<div class='main_content'>
+					<h3 class='techs'>Technologies</h3>
+				</div>
+			</div>
+		</section>
+
+		<section class="cd-section">
+			<div class='bkg_page'>
+				<div class='main_content projects'>
+					<h3>Projects</h3>
+					<div style="width: 80vw; margin: 0 auto;" ui-view></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cd-section">
+			<div class='bkg_page'>
+				<div class='main_content contact'>
+					<h3>Contact</h3>
+				</div>
+				<!-- <footer class='footer'>
+					<div class='ft_container nav navbar-nav navbar-right'>
+						<a ui-sref='home'>Home</a> | <a ui-sref='about_me'>About Us</a> | <a ui-sref='mailto:jbmoderninserts@gmail.com'>Contact</a> | 
+						<p class='text-muted'>Made By Jimmy Nguyen - 2016</p>
+					</div>
+				</footer> -->
+			</div>
+		</section>
+
+		<nav>
+			<ul class="cd-vertical-nav">
+				<li><a href="#0" class="cd-prev inactive">Next</a></li>
+				<li><a href="#0" class="cd-next">Prev</a></li>
+			</ul>
+		</nav>
+		<script src="javascripts/jquery-2.1.4.js"></script>
+		<script src="javascripts/velocity.min.js"></script>
+		<script src="javascripts/velocity.ui.min.js"></script>
+		<script src="javascripts/main.js"></script> <!-- Resource jQuery -->
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <div id='wrapper' ng-controller='MainController'>
+			<hr>
+			<div id='header'>
+				<nav class="navbar">
+					<div class='container-fluid'> -->
+						<!-- <img id='header_logo' src="img/jbmi.jpg" alt='jbmi_logo'> -->
+						<!-- <h1 id='name-banner'>Jimmy Nguyen</h1> -->
+						<!-- <a ng-click="goToJBMI()">JBMI</a> -->
+					<!-- </div>
+				</nav>
+			</div>
+			<hr>
+			<div id='body-content'>
+				<div id="code-background" class="custom-background">
+					<h1>HELLO!</h1>
+				</div>
+				<div class="custom-background">
+
+				</div>
+				<div id="jbmi-background" class="custom-background">
+					
+				</div>
+				<div id='main-content' role="main">
+					<div ui-view></div>
+				</div>
+			</div>
+			<footer class='footer'>
+				<div class='ft_container nav navbar-nav navbar-right'>
+					<a ui-sref='home'>Home</a> | <a ui-sref='about_me'>About Us</a> | <a ui-sref='mailto:jbmoderninserts@gmail.com'>Contact</a> | 
+					<p class='text-muted'>Made By Jimmy Nguyen - 2016</p>
+				</div>
+			</footer>
+		</div> -->
+	</body>
+</html>

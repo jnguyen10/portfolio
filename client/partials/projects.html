@@ -1,0 +1,18 @@
+<div class='featured_divs' ng-controller='MainController'>
+<!-- 	<div class='blog_header'>
+		<h1 class='text-center'>Projects</h1>
+	</div> -->
+	<hr style="border-top: 1px solid #23527C">
+	<div class='featured_divs'>
+		<uib-carousel interval='myInterval' no-wrap='noWrapSlides'>
+			<uib-slide ng-repeat='slide in slides' active='slide.active'>
+				<a href="#/{{slide.product_type}}">
+					<img src='{{slide.image}}' alt='{{slide.name}}' style='margin:auto;'>
+					<div class='carousel-caption'>
+						<h4 class='carousel_link'>{{slide.name}}</h4>
+					</div>
+				</a>
+			</uib-slide>
+		</uib-carousel>
+	</div>
+</div>
