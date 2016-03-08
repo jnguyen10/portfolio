@@ -139,6 +139,9 @@ Main Components
 .cd-section .techs {
 
 }
+.cd-section .contact {
+
+}
 /*.cd-section h1 {
   line-height: 50vh;
   text-align: center;
@@ -156,6 +159,7 @@ Main Components
   vertical-align: middle; 
   text-align: center;
   text-shadow: 2px 2px gray;
+  font-size: 4.5rem;
 }
 .cd-section h3 {
   font-family: "Alegreya Sans", Avenir, sans-serif;
@@ -207,14 +211,13 @@ Main Components
   background-image: url("../images/code_bkg.png");
 }
 [data-animation="parallax"] .cd-section:nth-of-type(2) > .bkg_page, [data-animation="fixed"] .cd-section:nth-of-type(2) > .bkg_page, [data-animation="opacity"] .cd-section:nth-of-type(2) > .bkg_page {
-  background-image: url("../images/coachella.jpg");
-}
-[data-animation="parallax"] .cd-section:nth-of-type(3) > .bkg_page, [data-animation="fixed"] .cd-section:nth-of-type(3) > .bkg_page, [data-animation="opacity"] .cd-section:nth-of-type(3) > .bkg_page {
   background-image: url("../images/languages.png");
 }
+[data-animation="parallax"] .cd-section:nth-of-type(3) > .bkg_page, [data-animation="fixed"] .cd-section:nth-of-type(3) > .bkg_page, [data-animation="opacity"] .cd-section:nth-of-type(3) > .bkg_page {
+  background-image: url("../images/starry_night.jpg");
+}
 [data-animation="parallax"] .cd-section:nth-of-type(4) > .bkg_page, [data-animation="fixed"] .cd-section:nth-of-type(4) > .bkg_page, [data-animation="opacity"] .cd-section:nth-of-type(4) > .bkg_page {
-  /*background-image: url("../images/code_bkg.png");*/
-  background-color: #267481;
+  background-image: url("../images/coachella.jpg");
 }
 [data-animation="parallax"] .cd-section:nth-of-type(5) > .bkg_page, [data-animation="fixed"] .cd-section:nth-of-type(5) > .bkg_page, [data-animation="opacity"] .cd-section:nth-of-type(5) > .bkg_page {
   background-image: url("../images/halfdome.jpg");
@@ -359,6 +362,16 @@ Main Components
 	font-family: "Slabo 27px", Avenir, sans-serif;
 }
 
+.featured_divs:before {
+	opacity: 0.5;
+}
+
+.description {
+	color: black;
+	font-size: 12pt;
+	text-align: left;
+}
+
 .header {
 	color: black;
 	margin-top: 0;
@@ -367,5 +380,67 @@ Main Components
 .btn-primary {
 	background: black;
 }
+.ft_container {
+	font-size: 1.75rem;
+	font-family: "Slabo 27px", Avenir, sans-serif;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+}
+.contact_container {
+	font-size: 4rem;
+	font-family: "Slabo 27px", Avenir, sans-serif;
+	line-height: 75vh;
+}
+.experience_container {
+	margin-left: 10px;
+}
+.experience {
+	border: 2px solid gray;
+	border-radius: 10px;
+	background: white;
+	margin: 3px;
+	width: 66%;
+	height: 25vh;
+	opacity: 0.6;
+}
+.no_experience {
+	margin: 3px;
+	width: 16%;
+	height: 25vh;
+}
+.inner_content {
+	color: black;
+	text-align: left;
+	font-family: "Slabo 27px", Avenir, sans-serif;
+	/*z-index: 1;*/
+}
+.add-ons {
+	font-size: 1rem;
+}
 
+/*
+.featured_divs {
+	position: relative;
+	overflow: hidden;
+	font-family: "Slabo 27px", Avenir, sans-serif;
+}
+
+.featured_divs:before {
+	content: '';
+	position: absolute;
+	padding: 20px;
+	opacity: 0.5;
+	background: white;
+	border: 2px solid gray;
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	left: 0;
+	right: 0;
+	background-position: 50% 0;
+	background-size: cover;
+}*/
 

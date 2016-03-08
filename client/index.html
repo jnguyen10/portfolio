@@ -50,7 +50,7 @@
 		
 		</script>
 	</head>
-	<body data-hijacking="on" data-animation="parallax">
+	<body data-hijacking="on" data-animation="parallax" ng-controller="MainController">
 		<section class="cd-section visible">
 			<div class='bkg_page'>
 				<div class='main_content'>
@@ -70,28 +70,34 @@
 			</div>
 		</section>
 
-		<section class="cd-section">
-			<div class='bkg_page' ng-controller="MainController">
-				<!-- <h2>JB Modern Inserts</h2> -->
-				<div class='main_content about_me'>
-					<h3>About Me</h3>
-				</div>
-				<!-- <div id='body-content'>
-					<div id="code-background" class="custom-background">
-						<h1>HELLO!</h1>
-					</div>
-					<div class="custom-background">
+		<!-- <section class="cd-section">
+			<div class='bkg_page'>
+				<div class='row main_content experience_container'>
+					<h3>Experience</h3>
+					<div class="col-sm-2 no_experience"></div>
+					<div class="col-sm-8 experience">
+						<div class='inner_content'>
 
+						</div>
 					</div>
-					<div id="jbmi-background" class="custom-background">
-						
+					<div class="col-sm-2 no_experience"></div>
+					<div class="col-sm-2 no_experience"></div>
+					<div class="col-sm-8 experience">
+						<div class='inner_content'>
+							
+						</div>
 					</div>
-					<div id='main-content' role="main">
-						<div ui-view></div>
+					<div class="col-sm-2 no_experience"></div>
+					<div class="col-sm-2 no_experience"></div>
+					<div class="col-sm-8 experience">
+						<div class='inner_content'>
+							
+						</div>
 					</div>
-				</div> -->
+					<div class="col-sm-2 no_experience"></div>
+				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="cd-section">
 			<div class='bkg_page'>
@@ -114,9 +120,12 @@
 			<div class='bkg_page'>
 				<div class='main_content contact'>
 					<h3>Contact</h3>
-					<p>Credit: Page Scroll Effects by CodyHouse</p>
-					<a ui-sref='home'>Home</a> | <a ui-sref='about_me'>About Us</a> | <a ui-sref='mailto:jbmoderninserts@gmail.com'>Contact</a> | 
-					<p class='text-muted'>Made By Jimmy Nguyen - 2016</p>
+					<div class='contact_container'>
+						<a href='https://www.linkedin.com/in/jnguyen87'><img src="images/linkedin.png" width='150' height='150'></a> | <a href='https://github.com/jnguyen10'><img src="images/github.png" width='150' height='150'></a> | <a href='mailto:jbmoderninserts@gmail.com'><img src="images/email.png" width='150' height='150'></a>
+					</div>
+					<div class='ft_container'>
+						<p><em>Credit: Page Scroll Effects by CodyHouse</em> | <strong>Made By Jimmy Nguyen &copy; 2016</strong></p>
+					</div>
 				</div>
 
 				<!-- <footer class='footer'>

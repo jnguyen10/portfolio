@@ -1,10 +1,5 @@
 portfolio_app.controller('MainController', function($scope, $location, $anchorScroll){
 
-	$scope.products = [];
-	$scope.breaks = [];
-	$scope.product_count = -3;
-	$scope.project = ""
-
 	$scope.myInterval = 5000;
 	$scope.noWrapSlides = false;
 	var jbmi_pics = ['jbmi_1', 'jbmi_2', 'jbmi_3', 'jbmi_4'];
@@ -41,8 +36,8 @@ portfolio_app.controller('MainController', function($scope, $location, $anchorSc
 	}
 
 	// Scroll Tags
-	$scope.goToJBMI = function() {
-		$location.hash('jbmi');
+	$scope.goToProjects = function() {
+		$location.hash('bottom');
 
 		$anchorScroll();
 	}
@@ -52,7 +47,5 @@ portfolio_app.controller('MainController', function($scope, $location, $anchorSc
 
 		$anchorScroll();
 	}
-
-	console.log("Hello", $scope.project)
 })
 

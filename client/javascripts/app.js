@@ -11,7 +11,19 @@ portfolio_app.config(function($stateProvider, $urlRouterProvider, $locationProvi
 		// Home states and nested views
 		.state('home', {
 			url: '/home',
-			templateUrl: 'partials/home.html'
+			// for a single home page view
+			templateUrl: 'partials/projects.html'
+
+			// for multi-home page views
+			// views: {
+			// 	'about_me@': {
+			// 		templateUrl: 'partials/about_me.html'
+			// 	},
+
+			// 	'projects@': {
+			// 		template: 'partials/projects.html'
+			// 	}
+			// }
 		})
 			// nested pages
 			.state('home.jbmi', {
@@ -34,32 +46,26 @@ portfolio_app.config(function($stateProvider, $urlRouterProvider, $locationProvi
 			})
 
 		// About me page and multiple named views
-		.state('about_me', {
-			url: '/about_me',
-			// testing multiple views (in this case two columns)
-			views: {
-				// main template (relatively named)
-				'': {
-					templateUrl: 'partials/about_me.html'
-				},
+		// .state('about_me', {
+		// 	url: '/about_me',
+		// 	// testing multiple views (in this case two columns)
+		// 	views: {
+		// 		// main template (relatively named)
+		// 		'': {
+		// 			templateUrl: 'partials/about_me.html'
+		// 		},
 
-				// child view, columnOne (absolutely named)
-				'columnOne@about_me': {
-					template: 'Look! I am column one!'
-				},
+		// 		// child view, columnOne (absolutely named)
+		// 		'columnOne@about_me': {
+		// 			template: 'Look! I am column one!'
+		// 		},
 
-				'columnTwo@about_me': {
-					templateUrl: 'partials/hobbies.html',
-					controller: 'MainController'
-				}
-			}
-		})
-
-		// DEMO FOR BLOG POST
-		.state('add_blog', {
-			url: '/blog/add',
-			templateUrl: 'partials/add_blog.html'
-		})
+		// 		'columnTwo@about_me': {
+		// 			templateUrl: 'partials/hobbies.html',
+		// 			controller: 'MainController'
+		// 		}
+		// 	}
+		// })
 
 	// use in conjuction with base tag in index.html to remove hashbang
 	//$locationProvider.html5Mode(true);

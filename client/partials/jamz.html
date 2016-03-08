@@ -3,7 +3,18 @@
 		<h1 class='text-center'>Projects</h1>
 	</div> -->
 	<h1 class='text-center header'>Jamz</h1>
-	<div class='col-sm-3'></div>
+	<div class='col-sm-3'>
+		<div class="description">
+			iOS mobile audio application using SoundCloud's API to retrieve user queries for artists or songs that the wish to add to their own personal history list.  Songs are played randomly based on the query.<br><br>
+			Technologies Used:
+			<ul>
+				<li>Swift</li>
+				<li>AV Foundation</li>
+				<li>NSCoding</li>
+				<li>SoundCloudSDK CocoaPod</li>
+			</ul>
+		</div>
+	</div>
 	<div class='col-sm-9'>
 		<uib-carousel interval='myInterval' no-wrap='noWrapSlides'>
 			<uib-slide ng-repeat='slide in jamz_slides' active='slide.active'>
