@@ -1,0 +1,19 @@
+<div class='row featured_divs' ng-controller='MainController'>
+<!-- 	<div class='blog_header'>
+		<h1 class='text-center'>Projects</h1>
+	</div> -->
+	<h1 class='text-center header'>JB Modern Inserts</h1>
+	<div class='col-sm-3'></div>
+	<div class='col-sm-9'>
+		<uib-carousel interval='myInterval' no-wrap='noWrapSlides'>
+			<uib-slide ng-repeat='slide in jbmi_slides' active='slide.active'>
+				<a href="#/{{slide.product_type}}">
+					<img src='{{slide.image}}' alt='{{slide.name}}' style='margin:auto;'>
+					<div class='carousel-caption'>
+						<h4 class='carousel_link'>{{slide.name}}</h4>
+					</div>
+				</a>
+			</uib-slide>
+		</uib-carousel>
+	</div>
+</div>

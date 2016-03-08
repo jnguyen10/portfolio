@@ -14,22 +14,23 @@ portfolio_app.config(function($stateProvider, $urlRouterProvider, $locationProvi
 			templateUrl: 'partials/home.html'
 		})
 			// nested pages
-			.state('home.projects', {
-				url: '/projects',
-				templateUrl: 'partials/projects.html'
+			.state('home.jbmi', {
+				url: '/jbmi',
+				templateUrl: 'partials/jbmi.html'
 			})
 
-			.state('home.hobbies', {
-				url: '/hobbies',
-				templateUrl: 'partials/hobbies.html',
-				controller: function($scope) {
-					$scope.players = ['Scope', 'Inside', 'app.js'];
-				}
+			.state('home.appt', {
+				url: '/appt',
+				templateUrl: 'partials/appt.html'
+				// controller: function($scope) {
+				// 	$scope.players = ['Scope', 'Inside', 'app.js'];
+				// }
 			})
 
-			.state('home.paragraph', {
-				url: '/paragraph',
-				template: 'Template can just be any arbitrary text.'
+			.state('home.jamz', {
+				url: '/jamz',
+				// template: 'Template can just be any arbitrary text.'
+				templateUrl: 'partials/jamz.html'
 			})
 
 		// About me page and multiple named views
