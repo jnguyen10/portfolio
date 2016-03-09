@@ -45,6 +45,12 @@ portfolio_app.config(function($stateProvider, $urlRouterProvider, $locationProvi
 				templateUrl: 'partials/jamz.html'
 			})
 
+			.state('home.luckyrolls', {
+				url: '/luckyrolls',
+				// template: 'Template can just be any arbitrary text.'
+				templateUrl: 'partials/luckyrolls.html'
+			})
+
 		// About me page and multiple named views
 		// .state('about_me', {
 		// 	url: '/about_me',

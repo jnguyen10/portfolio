@@ -2,23 +2,24 @@
 <!-- 	<div class='blog_header'>
 		<h1 class='text-center'>Projects</h1>
 	</div> -->
-	<h1 class='text-center header'>Jamz</h1>
+
+	<div class='col-sm-12'>
+		<h1 class='text-center header'>Lucky Rolls</h1>
+	</div>
 	<div class='col-sm-3'>
 		<div class="description">
-			iOS mobile audio application using SoundCloud's API to retrieve user queries for artists or songs that the wish to add to their own personal history list.  Songs are played randomly based on the query.<br><br>
+			Lucky Rolls Game is an iOS 9 app built in Swift 2. This game is a twist to the classic Snakes and Ladders game. It uses the device accelerometer to roll the die. Players get to roll the die twice and move forward/backward based on the difference between the two rolls. Rolling the die 'harder' also initiates a 'double roll' which would end the game faster.<br><br>
 			Technologies Used:
 			<ul>
 				<li>Swift</li>
-				<li>AV Foundation</li>
-				<li>NSCoding</li>
-				<li>SoundCloudSDK CocoaPod</li>
+				<li>Core Motion</li>
 			</ul>
-			<a href="https://github.com/jnguyen10/Jamz">GitHub</a>
+			<a href="https://github.com/filzamazahir/LuckyRollsGame">GitHub</a>
 		</div>
 	</div>
 	<div class='col-sm-9'>
 		<uib-carousel interval='myInterval' no-wrap='noWrapSlides'>
-			<uib-slide ng-repeat='slide in jamz_slides' active='slide.active'>
+			<uib-slide ng-repeat='slide in luckyrolls_slides' active='slide.active'>
 				<a href="#/{{slide.product_type}}">
 					<img src='{{slide.image}}' alt='{{slide.name}}' style='margin:auto;'>
 					<div class='carousel-caption'>
@@ -28,4 +29,5 @@
 			</uib-slide>
 		</uib-carousel>
 	</div>
+
 </div>

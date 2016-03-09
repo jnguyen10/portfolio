@@ -8,10 +8,13 @@ portfolio_app.controller('MainController', function($scope, $location, $anchorSc
 	var appt_names = ['Appointment Reminder - Python-based Appointment Tracker', 'Appointment Reminder', 'Appointment Reminder', 'Appointment Reminder'];
 	var jamz_pics = ['jamz_1', 'jamz_2', 'jamz_3', 'jamz_4'];
 	var jamz_names = ['JAMZ - iOS/Swift Music Player', 'JAMZ', 'JAMZ', 'JAMZ'];
+	var luckyrolls_pics = ['luckyrolls_1', 'luckyrolls_2', 'luckyrolls_3', 'luckyrolls_4'];
+	var luckyrolls_names = ['Lucky Rolls - iOS/Swift Dice Game', 'Lucky Rolls', 'Lucky Rolls', 'Lucky Rolls'];
 
 	$scope.jbmi_slides = [];
 	$scope.appt_slides = [];
 	$scope.jamz_slides = [];
+	$scope.luckyrolls_slides = [];
 
 	$scope.addSlide = function(index){
 		$scope.jbmi_slides.push({
@@ -27,6 +30,11 @@ portfolio_app.controller('MainController', function($scope, $location, $anchorSc
 		$scope.jamz_slides.push({
 			image: 'images/'+jamz_pics[index]+'.png',
 			name: jamz_names[index]
+		});
+
+		$scope.luckyrolls_slides.push({
+			image: 'images/'+luckyrolls_pics[index]+'.png',
+			name: luckyrolls_names[index]
 		});
 	}
 
